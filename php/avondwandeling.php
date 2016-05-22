@@ -31,7 +31,3 @@ Er is een inschrijving ontvangen voor de avondwandeling via de website:
     header('Location: http://dekangoeroes.be/html/bevestigingInschrijvingAvondwandeling.html');
     exit();
 }
-
-
-
-
