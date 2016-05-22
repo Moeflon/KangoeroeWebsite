@@ -1,0 +1,46 @@
+
+a,.tp-caption a.btn:hover {
+    //color: #D6E9FA;
+}
+.top-nav-collapse {
+    background: #131648;
+}
+
+.navbar-custom ul.nav ul.dropdown-menu li a:hover {
+    color: #171A54
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+    background-color: #67b0d1
+}
+
+.widget-avatar .avatar:hover {
+    border: 5px solid #171A54;
+}
+
+.bg-skin {
+    background: #171A54;
+}
+
+form#contact-form input:focus,form#contact-form select:focus,form#contact-form textarea:focus {
+    border-color: #d6e9fa
+}
+
+footer {
+    background-color: #131648;
+}
+
+.btn-skin {
+    color: #fff;
+    background-color: #171A54;
+    border-color: #171A54;
+}
+.download a{
+    color: #666666;
+}
+.download a:hover{
+    color: #D6E9FA;
+}
+//color kangoeroe donker: #2d2f54
+//color kangoeroe licht: D6E9FA

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="Thomas de Wulf">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+        <title>Contact - De Kangoeroes</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+
+        <!-- Fonts -->
+        <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="../css/animate.css" rel="stylesheet" />
+        <!-- Squad theme CSS -->
+        <link href="../css/style.css" rel="stylesheet">
+        <link href="../color/default.css" rel="stylesheet">
+
+    </head>
+
+    <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+        <!-- Preloader -->
+        <div id="preloader">
+            <div id="load"></div>
+        </div>
+
+        <nav class="navbar navbar-custom navbar-fixed-top top-nav-collapse" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="../index.html">
+                        <h1>De Kangoeroes</h1>
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#about">Over</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Info<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="infoAlgemeen.html">Algemeen</a></li>
+                                <li><a href="inschrijven.html">Inschrijven</a></li>
+                                <li role="presentation" class="dropdown-header">Takken</li>
+                                <li><a href="Bevers.html">Bevers</a></li>
+                                <li><a href="welpen.html">Welpen</a></li>
+                                <li><a href="wolven.html">Wolven</a></li>
+                                <li><a href="jvg.html">Jongverkenners</a></li>
+                                <li><a href="vg.html">Verkenners</a></li>
+                                <li><a href="seniors.html">Seniors</a></li>
+                                <li><a href="leiding.html">Leiding</a></li>
+                                <li><a href="stam.html">Stam</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Praktisch<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="praktisch.html">Praktisch</a></li>
+                                <li><a href="boekje.html">Boekje</a></li>
+                                <li><a href="wet.html">Wet</a></li>
+                                <li><a href="afspraken.html">afspraken</a></li>
+                                <li><a href="download.html">Downloads</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="media.html">Media</a></li>
+                        <li class="active"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+        <section id="contact" class="home-section text-center">
+            <div class="heading-contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="wow bounceInDown" data-wow-delay="0.4s">
+                                <div class="section-heading">
+                                    <h2>Contact</h2>
+                                    <!--<i class="fa fa-2x fa-angle-down"></i>-->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-2 col-lg-offset-5">
+                        <hr class="marginbot-50">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="boxed-grey wow bounceInUp" data-wow-delay="0.2s">
+                            <form id="contact-form" role="form"  method="post" action="../php/contact_1.php">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="name">
+                                                Naam</label>
+                                            <input type="text" name="name" class="form-control" id="name" placeholder="Voornaam Naam" required="required" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">
+                                                Email</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                                </span>
+                                                <input type="email" name="email" class="form-control" id="email" placeholder="Email" required="required" /></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="onderwerp">
+                                                Onderwerp</label>
+                                            <input type="text" name="onderwerp" class="form-control" id="onderwerp" placeholder="Onderwerp" required="required" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="message">
+                                                Bericht</label>
+					    <div class="input-group col-md-12 col-sm-12 col-xs-12">
+						<textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+							  placeholder="Bericht"></textarea></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="submit" id="submit" name="submit" class="btn btn-primary btn-skin pull-right" value="submit"/>
+
+                                        <p class="col-md-3">Alle velden zijn verplicht.</p>
+					<?php echo $result; ?>
+                                    </div>
+
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="widget-contact wow bounceInUp" data-wow-delay="0.2s">
+                            <h5>Adres</h5>
+
+                            <address>
+                                <strong>152e FOS De Kangoeroes</strong><br>
+                                Axminsterhof 9<br>
+                                9070 Heusden<br>
+
+                            </address>
+
+                            <address>
+                                <strong>Email</strong><br>
+                                <a href="mailto:eenheidsleiding@dekangoeroes.be" class="email">eenheidsleiding@dekangoeroes.be</a>
+                            </address>
+			    <address>
+                                <strong>Telefoon</strong><br>
+                                0471 62 63 02/0491 43 82 30
+                            </address>
+                            <address>
+                                <strong>Sociaal</strong><br>
+                                <ul class="company-social">
+                                    <li class="social-facebook"><a href="https://www.facebook.com/dekangoeroes.fos" target="_blank"><i class="fa fa-facebook"></i></a></li>
+
+                                </ul>
+                            </address>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <footer class="extraHeight">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="wow shake" data-wow-delay="0.4s">
+                            <div class="page-scroll marginbot-30">
+                                <a href="#top" id="totop" class="btn btn-circle">
+                                    <i class="fa fa-angle-double-up animated"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p>&copy;Copyright 2015 - Thomas de Wulf. All rights reserved.
+                            <a href="http://www.bootstrapzero.com/bootstrap-template/squad">Template: Squad</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Core JavaScript Files -->
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/jquery.easing.min.js"></script>
+        <script src="../js/jquery.scrollTo.js"></script>
+        <script src="../js/wow.min.js"></script>
+        <!-- Custom Theme JavaScript-->
+        <script src="../js/custom2.js"></script>
+
+    </body>
+
+</html>

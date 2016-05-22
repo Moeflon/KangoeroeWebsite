@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+        <title>Inschrijven - De Kangoeroes</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+
+        <!-- Fonts -->
+        <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="../css/animate.css" rel="stylesheet" />
+        <!-- Squad theme CSS -->
+        <link href="../css/style.css" rel="stylesheet">
+        <link href="../color/default.css" rel="stylesheet">
+
+    </head>
+
+    <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+        <!-- Preloader -->
+        <div id="preloader">
+            <div id="load"></div>
+        </div>
+
+        <nav class="navbar navbar-custom navbar-fixed-top top-nav-collapse" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="../index.html">
+                        <h1>De Kangoeroes</h1>
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#about">Over</a></li>
+                        <li class="dropdown active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Info<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="infoAlgemeen.html">Algemeen</a></li>
+                                <li class="active"><a href="#">Inschrijven</a></li>
+                                <li role="presentation" class="dropdown-header">Takken</li>
+                                <li><a href="Bevers.html">Bevers</a></li>
+                                <li><a href="welpen.html">Welpen</a></li>
+                                <li><a href="wolven.html">Wolven</a></li>
+                                <li><a href="jvg.html">Jongverkenners</a></li>
+                                <li><a href="vg.html">Verkenners</a></li>
+                                <li><a href="seniors.html">Seniors</a></li>
+                                <li><a href="leiding.html">Leiding</a></li>
+                                <li><a href="stam.html">Stam</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Praktisch<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="praktisch.html">Praktisch</a></li>
+                                <li><a href="boekje.html">Boekje</a></li>
+                                <li><a href="wet.html">Wet</a></li>
+                                <li><a href="afspraken.html">Afspraken</a></li>
+                                <li><a href="download.html">Downloads</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="media.html">Media</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Inschrijvingsformulier</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form id="contact-form" role="form"  method="post" action="http://www.dekangoeroes.be/php/inschrijven.php">
+                            <div class="container-fluid">
+                                <div>
+				    <p class="subtitle">Opgelet: dit formulier is enkel voor NIEUWE inschrijvingen!</p>
+                                    <div>
+                                        <h4>Gegevens kind</h4>
+
+                                        <div class="form-group col-md-6">
+                                            <label for="VoornaamKind">
+                                                Voornaam kind*</label>
+                                            <input type="text" name="VoornaamKind" class="form-control" id="VoornaamKind" placeholder="Voornaam" required="required" />
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="AchternaamKind">
+                                                Achternaam kind*</label>
+                                            <input type="text" name="AchternaamKind" class="form-control" id="AchternaamKind" placeholder="Achternaam" required="required" />
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <label for="GeboortedatumKind">
+                                                Geboortedatum kind*</label>
+                                            <input type="date" name="GeboortedatumKind" class="form-control" id="GeboortedatumKind" required="required" />
+                                        </div>
+
+                                    </div>
+                                    <div class="" data-wow-delay="0.2s">
+                                        <h4 class="extraMargin">gegevens ouder</h4>
+
+
+                                        <div class="form-group col-md-6">
+                                            <label for="VoornaamOuder">
+                                                Voornaam ouder*</label>
+                                            <input type="text" name="VoornaamOuder" class="form-control" id="VoornaamOuder" placeholder="Voornaam" required="required" />
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="AchternaamOuder">
+                                                Achternaam ouder*</label>
+                                            <input type="text" name="AchternaamOuder" class="form-control" id="AchternaamOuder" placeholder="Achternaam" required="required" />
+                                        </div>
+					<div class="form-group col-md-12">
+					    <div class="checkbox">
+						<label for="isOudLeiding">
+						    <input type="checkbox" name="isOudLeiding" id="isOudLeiding"> Ik ben oud-leiding
+						</label>
+					    </div>
+                                        </div>
+
+
+                                        <div class="form-group col-md-12">
+                                            <label for="email">
+                                                Email*</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                                </span>
+                                                <input type="email" name="email" class="form-control" id="email" placeholder="Email" required="required" /></div>
+                                        </div>
+					<div class="form-group col-md-12">
+                                            <label for="gsm">
+                                                GSM nummer*</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><span class="glyphicon glyphicon-phone"></span>
+                                                </span>
+                                                <input type="text" name="gsm" class="form-control" id="gsm" placeholder="GSM nummer" required="required" /></div>
+                                        </div>
+
+					<div class="form-group col-md-6">
+
+					    <label for="straat">
+						Straat*</label>
+					    <input name="straat" id="postcode" class="form-control" required="required"
+						   placeholder="Straat"/>
+					</div>
+					<div class="form-group col-md-6">
+					    <label for="nummer">Nummer*</label>
+					    <input name="nummer" id="nummer" class="form-control" required="required" placeholder="Nummer + Bus(evt.)"/>
+					</div>
+
+
+
+
+					<div class="form-group col-md-6">
+					    <label for="postcode">
+						Postcode*</label>
+					    <input name="postcode" id="postcode" class="form-control" required="required"
+						   placeholder="Postcode"/></div>
+					<div class="form-group col-md-6">
+					    <label for="gemeente">Gemeente*</label>
+					    <input name="gemeente" id="gemeente" class="form-control" required="required" placeholder="Gemeente"/>
+					</div>
+
+
+
+
+                                    </div>
+                                    <div class="" data-wow-delay="0.2s">
+                                        <h4 class="extraMargin">Algemeen</h4>
+					<div class="form-group col-md-12">
+					    <label for="broertjeZusje">Broert/zus in de scouts</label>
+					    <input name="broertjeZusje" id="broertjeZusje" class="form-control" placeholder="Naam broert/zus    "/>
+					</div>
+
+                                        <div>
+                                            <div class="form-group col-md-12">
+                                                <label for="bericht">
+                                                    Optioneel bericht</label>
+                                                <textarea name="message" id="bericht" class="form-control" rows="9" cols="25"
+                                                          placeholder="Bericht"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="col-md-12">Velden aangeduid met * zijn verplicht.</p>
+                                </div>
+                            </div><div class="modal-footer">
+				<!-- <button type="button" class="btn btn-skin" data-dismiss="modal">Sluiten</button>-->
+				<input type="submit" id="submit" name="submit" class="btn btn-primary btn-skin pull-right" value="Verzenden"/>
+			    </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <section id="contact" class="home-section text-center">
+            <div class="heading-contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="wow bounceInDown" data-wow-delay="0.4s">
+                                <div class="section-heading">
+                                    <h2>Inschrijven</h2>
+                                    <!--<i class="fa fa-2x fa-angle-down"></i>-->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-lg-offset-5">
+                        <hr class="marginbot-50">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="wow bounceInUp" data-wow-delay="0.2s">
+                            <div class="team">
+                                <div class="inner team">
+				    <!-- <h5>Inschrijven</h5>-->
+				    <h3 class="leidingTitel">Lid worden?</h3>
+                                    <p class="subtitle">Ben jij een avontuurlijk type? Speel je graag bos- en stadsspelen met leeftijdsgenoten? Deins je er niet voor terug om op kampen en weekends mee te gaan? Dan is scouting vast en zeker iets voor jou! </p>
+				    <p class=" subtitle">Scouting is populair en dat merken we. Onze scouts heeft de voorbije jaren een heel grote toestroom van nieuwe leden gekend. Wij vinden het enorm fijn dat we jaarlijks zoveel nieuwe jongeren mogen verwelkomen in onze groep maar jammer genoeg is de vraag veel groter dan ons aanbod. Wij zijn bijgevolg genoodzaakt om in sommige leeftijdsgroepen (takken) te werken met wachtlijsten. </p>
+				    <h3 class="leidingTitel">Waarom een wachtlijst?</h3>
+				    <p class="subtitle">Wij hechten heel veel belang aan de veiligheid van onze leden en aan de kwaliteit van onze spelen. Door onze groepen in grootte te beperken, zorgen we ervoor dat onze leiding een groep heeft waar ze iedereen de nodige aandacht kunnen geven en waar ze overzicht kunnen bewaren tijdens de activiteiten. Veiligheid en kwaliteit primeert immers in onze vereniging.</p>
+				    <p class="subtitle">Daarnaast gaan we als scoutsgroep heel graag als eenheid op krokus-en zomerkamp. Indien onze groep te groot zou zijn, zouden we dit onmogelijk kunnen doen. </p>
+				    <p class="subtitle">Het is wel zo dat we niet voor alle takken een wachtlijst nodig hebben. In de oudere takken is de toestroom veel kleiner en is er op dit moment geen nood om een wachtlijst in te voeren. De takken waar we wel met een wachtlijst werken zijn de Bevers, Welpen, Wolven en Jongverkenners.</p>
+				    <h3 class="leidingTitel">Hoe werkt de wachtlijst?</h3>
+				    <p class="subtitle">We schrijven nieuwe leden in tot het maximum aantal leden voor een tak bereikt is. Het maximum aantal kindjes per tak is 34. Aangezien een tak twee geboortejaren bevat, zijn 17  leden van geboortejaar A en 17 anderen van geboortejaar B.  Wanneer een tak de grens van 34 leden bereikt heeft  worden verdere kandidaten op de wachtlijst gezet. </p>
+				    <p class="subtitle">De wachtlijsten zijn niet per tak maar per geboortejaar. Dit wil zeggen dat wanneer een lid stopt, de vacante plaats ingevuld wordt door een ander kind van hetzelfde geboortejaar.  De wachtlijsten werken ook met een voorrangsregel: (stief)broertjes en zusjes van huidige leden en kinderen van oud-leiding krijgen altijd voorrang. Niet bij alle takken zijn er wachtlijsten. Indien uw kind direct kan starten laten wij iets weten van zodra we de inschrijving hebben ontvangen.</p>
+				    <p class="subtitle">Wij nemen, zodra er een plaats vrij is voor uw kind, contact met jullie op. De leiding zal jullie dan uitnodigen op de eerstvolgende scoutsvergadering om de inschrijving verder af te ronden.</p>
+				    <h3 class="leidingTitel">Hoe schrijf ik mijn kind in/ zet ik het op de wachtlijst?</h3>
+				    <p class="subtitle">Je kan je kind inschrijven/ op onze wachtlijst zetten door onderstaand formulier in te vullen. Concreet hebben we volgende gegevens nodig: volledige naam van het kind, geboortedatum, e-mailadres van de ouders, telefoonnummer van de ouders en het adres. Gelieve ook in te vullen indien er al een broertje of zusje in de scouts zit en/of &eacute;&eacute;n van de ouders oud-leiding is. Eens het formulier doorgestuurd wordt, blijft uw zoon en/of dochter op onze wachtlijst staan tot er een plaats vrijkomt of tot u expliciet vraagt om uw kind van de wachtlijst te verwijderen.
+					Twijfel bij vragen omtrent onze wachtlijsten niet om <a href="contact.html">contact</a> op te nemen met de eenheidsleiding.
+				    </p>
+
+                                    <!--   <img src="img/IMG_7497 - kopie.jpg" alt="Voorbeeld foto" class="img-responsive img-circle col-md-offset-4" title="" style="">-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="wow bounceInUp" data-wow-delay="0.2s">
+                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                                Inschrijven
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="wow shake" data-wow-delay="0.4s">
+                            <div class="page-scroll marginbot-30">
+                                <a href="#top" id="totop" class="btn btn-circle">
+                                    <i class="fa fa-angle-double-up animated"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p>&copy;Copyright 2015 - Thomas de Wulf. All rights reserved.
+                            <a href="http://www.bootstrapzero.com/bootstrap-template/squad">Template: Squad</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Core JavaScript Files -->
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/jquery.easing.min.js"></script>
+        <script src="../js/jquery.scrollTo.js"></script>
+        <script src="../js/wow.min.js"></script>
+        <!-- Custom Theme JavaScript-->
+        <script src="../js/custom2.js"></script>
+    </body>
+</html>
