@@ -191,7 +191,7 @@ table tr{
     background-color: rgba(214, 233, 250, 1);
     border: 1px solid #2d2f54;
 
-    width: 100%;
+   /* width: 100%; ->fucked mobile nav*/
 }
 
 .navbar-custom.top-nav-collapse .nav.navbar-nav {
@@ -929,8 +929,7 @@ Parallax
 
     }
     .intro{
-        background-image: none;
-        background-color: #131648;
+
         height: 100%;
 
     }
@@ -977,9 +976,8 @@ Parallax
         font-size: 20px;
     }
     .intro{
-        background-image: none;
-        background-color: #131648;
-        height: 100%;
+
+        height: 100vh;
 
     }
     .intro .slogan h2 {
