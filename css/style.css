@@ -24,6 +24,7 @@ body {
 
 }
 
+
 .heading-about  a{
     color:white;
 
@@ -430,7 +431,7 @@ hr {
 
     position:relative;
 
-    background: url(../img/1074249_623005477719240_2123315618_o.jpg) no-repeat top center;
+    background: url(../img/groepsfoto2016.jpg) no-repeat top center;
 }
 
 #intro.intro {
@@ -439,7 +440,20 @@ hr {
 
 .intro .slogan {
     text-align: center;
+    background-color: rgba(0,0,0,0.3);
+  padding-top: 20px;
+    padding-bottom: 20px;
 
+
+}
+.intro .slogan h4
+{
+    margin-bottom: 0; !important
+}
+
+.fb-btn
+{
+    margin-top: 20px;
 }
 
 .intro .page-scroll {
@@ -878,6 +892,8 @@ Parallax
 
 @media(min-width:767px) {
 
+
+
     .navbar {
         padding: 20px 0;
         border-bottom: 0;
@@ -932,6 +948,8 @@ Parallax
 
         height: 100%;
 
+
+
     }
     .navbar-custom.top-nav-collapse ul.nav ul.dropdown-menu li a {
 	color: white;
@@ -954,6 +972,7 @@ Parallax
 	color: white;
 
     }
+
     .dropdown-header{
 	color: white;
     }
@@ -982,6 +1001,7 @@ Parallax
     }
     .intro .slogan h2 {
         font-size: 40px;
+        line-height: 40px;
     }
     .overlay-container {
         position: relative;

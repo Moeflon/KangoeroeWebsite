@@ -19,7 +19,8 @@ function BoekjeRepository()
 	new Boekje(6, "oktober - november 2015", "2015 - 2016", "boekjeOktoberNovember.pdf", false),
 	new Boekje(7, "december - januari - februari 2015/2016", "2015-2016", "boekjeDecemberJanuariFebruari.pdf", false),
         new Boekje(8, "maart - april - mei 2016","2015-2016","boekjeMaartAprilMei.pdf",false),
-             new Boekje(8, "Kampboekje 2016","2015-2016","zomerkamp2016.pdf",true)
+             new Boekje(9, "Kampboekje 2016","2015-2016","zomerkamp2016.pdf",false),
+        new Boekje(10, "oktober - november 2016","2016-2017","boekjeOktoberNovember.pdf",true)
     ];
 
 }
