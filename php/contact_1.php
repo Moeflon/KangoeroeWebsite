@@ -1,5 +1,5 @@
 <?php
-
+require_one("mailer/mail.php");
 if ($_POST["submit"]) {
     $naam = $_POST['name'];
     $email = $_POST['email'];
@@ -14,7 +14,7 @@ if ($_POST["submit"]) {
     $mailOnderwerp = 'Bericht via website: ' . $onderwerp;
     $body = "Naam: " . $naam
 	    . "\nEmail: " . $email . "\n\nOnderwerp: " . $onderwerp . "\n\n\nBericht: " . $bericht2;
-    mail('eenheidsleiding@dekangoeroes.be', $mailOnderwerp, $body, $headers);
+    mailTo('eenheidsleiding@dekangoeroes.be', $mailOnderwerp, $body, $headers);
 
     header('Location: http://dekangoeroes.be/html/bevestigingBericht.html');
     //exit();

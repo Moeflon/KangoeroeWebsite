@@ -1,5 +1,5 @@
 <?php
-
+require_one("mailer/mail.php");
 /* Check all form inputs using check_input function */
 if ($_POST["submit"]) {
 
@@ -74,8 +74,8 @@ Wij nemen contact met u op van zodra wij uw inschrijving ontvangen hebben.
     ;
     $body2 = wordwrap($body, 70, "\r\n");
     /* Send the message using mail() function */
-    mail('eenheidsleiding@dekangoeroes.be', 'Inschrijving via website', $body2, $headers);
-    mail($email, "Bevestiging inschrijving 152e FOS De Kangoeroes", $bodyOuder, $headers2);
+    mailTo('eenheidsleiding@dekangoeroes.be', 'Inschrijving via website', $body2, $headers);
+    mailTo($email, "Bevestiging inschrijving 152e FOS De Kangoeroes", $bodyOuder, $headers2);
 
     /* Redirect visitor to the thank you page */
     header('Location: http://dekangoeroes.be/html/bevestigingInschrijving.html');

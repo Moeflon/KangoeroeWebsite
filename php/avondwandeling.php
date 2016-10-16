@@ -1,5 +1,5 @@
 <?php
-
+require_one("mailer/mail.php");
 /* Check all form inputs using check_input function */
 if ($_POST["submit"]) {
 
@@ -24,7 +24,7 @@ Er is een inschrijving ontvangen voor de avondwandeling via de website:
     ;
     $body2 = wordwrap($body, 70, "\r\n");
     /* Send the message using mail() function */
-    mail('eenheidsleiding@dekangoeroes.be', 'Inschrijving via website', $body2, $headers);
+    mailTo('eenheidsleiding@dekangoeroes.be', 'Inschrijving via website', $body2, $headers);
 
 
     /* Redirect visitor to the thank you page */

@@ -1,5 +1,5 @@
 <?php
-
+require_one("mailer/mail.php");
 /* Check all form inputs using check_input function */
 if ($_POST["submit"]) {
 //Ophalen info van het formulier
@@ -33,8 +33,8 @@ if ($_POST["submit"]) {
 	    . "\r\nEenheidsleiding 152e FOS de Kangoeroes";
 
     /* Send the message using mail() function */
-    mail('eenheidsleiding@dekangoeroes.be', 'Sponsoring via website', $body, $headers);
-    mail($email, "Bevestiging sponsoring Goede doelendag 152e FOS De Kangoeroes", $bodyOuder, $headers2);
+    mailTo('eenheidsleiding@dekangoeroes.be', 'Sponsoring via website', $body, $headers);
+    mailTo($email, "Bevestiging sponsoring Goede doelendag 152e FOS De Kangoeroes", $bodyOuder, $headers2);
 
     /* Redirect visitor to the thank you page */
     header('Location: http://dekangoeroes.be/html/bevestigingSponsoring.html');
